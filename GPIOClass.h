@@ -3,15 +3,10 @@
 #include <iostream>
 #include <string>
 #include <fstream>
-#include <conio.h>//I do not think it is needed
 #include <windows.h>//instead of unix based windows for clocks. Change back when running code on Raspberry Pi
 
 using namespace std;
-/* GPIO Class
- * Purpose: Each object instantiated from this class will control a GPIO pin
- * The GPIO pin number must be passed to the overloaded class constructor
- * I believe this can only be used with digital IO. 
- */
+
 class GPIOClass{
 public:
     GPIOClass(string x); // creates a GPIO object that controls GPIOx, where x is passed to this constructor.. Also default constructor (pin 4)
